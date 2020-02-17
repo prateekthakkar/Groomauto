@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+font-family: "Lato", sans-serif;
+}
+.sidenav {
+height: 100%;
+width: 170px;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+background-color: #111;
+overflow-x: hidden;
+padding-top: 20px;
+}
+.sidenav a {
+padding: 6px 6px 6px 32px;
+text-decoration: none;
+font-size: 25px;
+color: #818181;
+display: block;
+}
+.sidenav a:hover {
+color: #f1f1f1;
+}
+.main {
+margin-left: 200px; /* Same as the width of the sidenav */
+}
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+<div class="sidenav">
+<a href="{% url 'Index' %}">Home</a>
+<a href="{% url 'U_Booking' %}">Booking</a>
+<a href="{% url 'U_Voucher' %}">Voucher</a>
+<a href="{% url 'U_Repair' %}">Repair</a>
+<a href="{% url 'Profile_User' %}">Profile</a>
+<a href="#">Logout</a>
+</div>
+<div class="container" style="min-height:700px; margin-left: 140px;width: 100%; ">
+          <div class="col-md-12">
+            <h2 class="text-center">Booking Details</h2>
+             <div class="table-responsive">
+              <div class='sample' id='sample'>
+                         <table class="table table-hover table-striped">
+                         <thead>
+                         <tr>
+                          <th>First Name</th>
+                          <th>Last Name</th>
+                          <th>Email-Id</th>
+                            <th>Mobile No</th>
+                           <th>Booking Date</th>
+                            <th>Pickup Time</th>
+                            <th>Address</th>
+                            <th>Company</th>
+                            <th>Model</th>
+                            <th>Number</th>
+                            <th>Service Center</th>
+                            <th>Price</th>
+                            <th>Status</th>
+                         </tr>
+                         </thead>
+                         <tbody>
+                          <td>Pratik</td>
+                          <td>Thakkar</td>
+                          <td>Pratikthakkar@gmail.com</td>
+                          <td>9876543210</td>
+                          <td>25-4-2019</td>
+                          <td>10:00AM-11:00AM</td>
+                          <td>142-K.K Nagar Ghatlodiya,<br>Ahmedabad</td>
+                          <td>Honda</td>
+                          <td>CB Hornet 160R</td>
+                          <td>GJ01C8865</td>
+                          <td>Shiv Shakti Motors and Service Station</td>
+                          <td>349</td>
+                          <td>Pending</td>
+                         </tbody>
+                         </table>
+                       </div>
+                         <form id="form1" runat='server'>   
+  <input type="button" value="Get Invoice" style="margin-left: 500px;" onclick="javascript:printDiv('sample')" />    
+</form>
+                         </div>
+          </div>
+                    </div>
+<!--Javascript function to save data inside 'sample' div -->
+ 
+    <script language="javascript" type="text/javascript">
+        function printDiv(divID) 
+    {
+            var divElements = document.getElementById(divID).innerHTML;
+            var oldPage = document.body.innerHTML;
+ 
+            document.body.innerHTML = 
+              "<html><head><title></title></head><body>" + 
+              divElements + "</body>";
+ 
+            window.print();
+ 
+            document.body.innerHTML = oldPage;
+        }
+    </script>
+</body>
+</html>
+}
+}
+}
+}
+}
+}

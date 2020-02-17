@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <title>Title</title>
+</head>
+<body>
+<form method="POST" action="/U_Repair/">{%csrf_token%}
+  <div class="form-row">
+      <div class="form-group col-md-6">
+      <label for="name">First_Name</label>
+      <input type="text" class="form-control" id="name" name="name" placeholder="Email">
+    </div>
+
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" name="email" placeholder="Email">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="phone">Phone</label>
+      <input type="tel" class="form-control" id="phone" name="phone" placeholder="Password">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="subject">Subject</label>
+    <input type="text" class="form-control" id="subject" name="subject" placeholder="Apartment, studio, or floor">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <label for="Vehicle-Company">Vehicle-Company</label>
+      <input type="text" class="form-control" id="Vehicle-Company" name="Vehicle-Company">
+    </div>
+      <div class="form-row">
+      <div class="form-group col-md-6">
+          <label for="Vehicle-Model">Vehicle-Model</label>
+          <input type="text" class="form-control" id="Vehicle-Model" name="Vehicle-Model">
+
+      </div>
+      </div>
+       <div class="form row">
+          <div class="form-group col-md-5">
+              <label for="Repair-Date">Repair-Date</label>
+              <input type="text" class="form-control" id="Repair-Date" name="Repair-Date">
+          </div>
+      </div>
+
+      <div class="form row">
+          <div class="form-group col-md-5">
+              <label for="Vehicle-Number">Vehicle-Number</label>
+              <input type="number" class="form-control" id="Vehicle-Number" name="Vehicle-Number">
+          </div>
+      </div>
+       <div class="form row">
+          <div class="form-group col-md-7">
+              <label for="add_message">add_message</label>
+              <input type="text" class="form-control" id="add_message" name="add_message">
+          </div>
+      </div>
+
+
+      </div>
+
+  <button type="submit" class="btn btn-primary">submit</button>
+</form>
+
+</body>
+</html>

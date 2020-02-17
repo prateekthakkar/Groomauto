@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="css/welcome.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+ <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+font-family: "Lato", sans-serif;
+}
+.sidenav {
+height: 100%;
+width: 200px;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+background-color: #111;
+overflow-x: hidden;
+padding-top: 20px;
+}
+.sidenav a {
+padding: 6px 6px 6px 32px;
+text-decoration: none;
+font-size: 25px;
+color: #818181;
+display: block;
+}
+.sidenav a:hover {
+color: #f1f1f1;
+}
+.main {
+margin-left: 200px; /* Same as the width of the sidenav */
+}
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+<div class="sidenav">
+<a href="{% url 'Index' %}">Home</a>
+<a href="{% url 'U_Booking' %}">Booking</a>
+<a href="{% url 'U_Voucher' %}">Voucher</a>
+<a href="{% url 'U_Repair' %}">Repair</a>
+<a href="{% url 'Profile_User' %}">Profile</a>
+<a href="#">Logout</a>
+</div>
+<div class="container">
+					<div class="col-md-12" style="margin-left: 100px;">
+						<h3 class="text-center">Welcome Pratik</h3>
+						 
+                   <form name="" class="form-horizontal cform-1" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+                            <div class="fl2">
+							<div class="tmInput form-group ">
+                            <div class="col-md-6">
+                           <label>First Name</label>
+                            <input type="text" name="fn" class="form-control" placeholder="FirstName" value="Pratik">
+                            <span id="fname_error_reg" style="color:#f00;"></span>
+                            </div>
+                            <div class="col-md-6">
+                           <label>Last Name</label>
+                            <input type="text" name="ln" class="form-control" placeholder="LastName" value="Thakkar">
+                            <span id="lname_error_reg" style="color:#f00;"></span>
+                            </div>
+                            </div>
+							</div>
+                            <div class="clear"></div>
+                            <div class="fl1">
+							<div class="tmInput form-group ">
+                            <div class="col-md-6">
+                            <label>Email</label>
+                            <input type="email" name="ema" class="form-control" placeholder="Email" value="Pratikthakkar@gmail.com">
+                            <span id="email_error_reg" style="color:#f00;"></span>
+                            </div>
+                          
+                            
+                            </div>
+							</div>
+                            <div class="clear"></div>
+                            
+                            <div class="fl2">
+							<div class="tmInput form-group ">
+                            <div class="col-md-6">
+                            <label>Contact No</label>
+                            <input type="text" name="phn" class="form-control" placeholder="Phone Number" m="" value="9876543210">
+                            <span id="phone_error_reg" style="color:#f00;"></span>
+                            </div>
+                          
+                            </div>
+							</div>
+                            <div class="clear"></div>
+                        
+                            
+                            <div class="fl2">
+							<div class="tmInput form-group ">
+                            <div class="col-md-6">
+                           <label>Area</label>
+                           <input type="text" name="area" class="form-control" placeholder="Area" value="Ghatlodiya">
+
+                            <span id="area_error_reg" style="color:#f00;"></span>
+                            </div>
+                            <div class="col-md-6">
+                            <label>Pincode</label>
+                            <div id="zipcode_resip">
+                <input name="zipcode_resi" value="388061" class="form-control" placeholder="Pincode">
+                </div><span id="zip_error_reg" style="color:#f00;"></span>
+                            </div>
+                            </div>
+							</div>
+                            <div class="clear"></div>
+                            <div class="fl1">
+							<div class="tmInput form-group ">
+                            <div class="col-md-12">
+                            <label>Residence Area:</label>
+                            <textarea type="text" value="143-K.K Nagar Ghatlodiya,Ahmedabad" name="resi_address" class="form-control" placeholder="Residence address" onblur="address()"
+                            ></textarea>
+                            <span id="address_error_reg" style="color:#f00;"></span>
+                            </div>
+                            
+                            </div>
+							</div>
+                            <div class="clear"></div>
+                            <div class="form-group">
+			                    <div class="col-sm-12" style="margin-left: 500px;">
+			                        <input type="submit" name="update_profile" class="btn book" value="Update Profile"style="background-color: navy-blue">
+			                    </div>
+			                </div>
+						
+                         </div>
+                         </div>
+                         </form>
+                        <div class="col-md-3"></div>
+					</div>
+                    </div>
+</body>
+</html>

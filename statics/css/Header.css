@@ -1,0 +1,378 @@
+/* First Header Part*/
+#hd1{
+  padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 15px;
+    font-family: montserrat-bold;
+    text-transform: uppercase;
+    color:#fff;
+}
+
+
+
+
+
+/* Logo */
+#logo
+{
+
+  margin-left: 80px;
+}
+
+/*Text Effects On Logo Bar Section  */
+#txt
+{
+  font-size: 15px;
+    font-family: montserrat-bold;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-left:-40px;   
+}
+
+/*Text Effects On Logo Bar Section  */
+#txt1
+{
+  font-size: 15px;
+    font-family: montserrat-bold;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 27px;
+    margin-left:-40px;   
+}
+
+/* Apply Hover Effect To Transform Navigation Panel  */
+.navbar2:hover
+{
+  transition-duration: 5s;
+  border: none;
+  color: white;
+  transform: scale(1.5,1.09);
+  text-align: center;
+  transition: 1s;
+}
+
+/* Navigation Panel */
+.nav
+{
+  width: 1348px;
+  height: 61px;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow:0px 1px 3px #3f51b5;
+  background-color: #00001a;
+}
+
+/* Nav Bar */
+ul li
+{
+  list-style: none;
+  width: 150px;
+  line-height: 60px;
+  position: relative;
+  background-color:  #e64d00;
+  box-shadow:0px 1px 3px #3f51b5;
+  text-align: center;
+  float: left;
+  font-family:timesnewroman;
+  color: white;
+}
+
+
+/* DropDown Postion Set*/
+ul li ul{
+  position: absolute;
+}
+
+/* Nav Bar Radius set*/
+.nav>ul>li:nth-of-type(1){
+      border-radius: 5px 0px 0px 5px;
+}
+
+.nav>ul>li:nth-of-type(8){
+      border-radius: 0px 5px 5px 0px;
+}
+
+/* Nav Bar Effects */
+.nav ul li a{
+  color: #fff;
+  width: 150px;
+  height: 58px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+/* Nav Bar Drop-Down */
+ul li a:hover{
+  font-weight: bold;
+  border-bottom: 2px solid #fff;
+}
+
+ul li ul{
+  display: none;
+}
+
+.nav ul li:hover ul{
+  display: block;
+
+}
+
+ul>li:hover{
+  width: 150px;
+  margin: left auto;
+}
+/* Drop -Down Effects*/
+.dropdown-menu
+{
+  display: block;
+}
+/* Drop-down Adjustment*/
+.adj
+{
+  width: 158px;
+  margin-top: -5px;
+}
+
+/*--Search Box Start--*/
+.search-box{
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 1200px;
+  transform: translate(-50%,-50%);
+  background: #fff;
+  height: 30px;
+  border-radius: 40px;
+  padding: 5px;
+}
+.search-box:hover > .search-txt{
+  width: 120px;
+  padding: 0 1px;
+
+}
+.search-btn{
+  
+  float: right;
+
+  height: 20px;
+  width: 2px;
+  margin-top: 0px;
+  border-radius: 0px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.search-txt{
+  border: none;
+  outline: none;
+  background: none;
+  float: left;
+  padding: 0;
+  color: black;
+  font-size: 16px;
+  transition: 0.8s;
+  line-height: 21px;
+  width: 0px;
+
+}
+/*--Search Box End--*/
+
+.item-boxes1 {
+
+    text-align: center;
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 25px;
+    webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    background: #fff;
+    box-shadow: 0 8px 48px 0 rgba(0, 0, 0, 0.15);
+    min-height: 300px;
+    margin-top: 75px;
+}
+.why_choseus{
+  color:#212b5a;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.a{
+  font-size: 15px;
+  margin-top: 10px;
+}
+.thumb_overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    background: rgba(0,0,0,.35);
+    -moz-transition: .6s all ease;
+    -o-transition: .6s all ease;
+    -webkit-transition: .6s all ease;
+    transition: .6s all ease;
+    color: #fff;
+    font-size: 30px;
+}
+.search-box1{
+ float: left;
+ margin-left: 30px;
+
+}
+.search-txt1{
+  width: 200px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  font-size: 17px;
+}
+
+.service-1 {
+  position: relative;
+  height: 295px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.service-1 img {vertical-align: middle;}
+
+.service-1 .service-detail {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: -20px;
+}
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  margin-left: -130px;
+  box-shadow: 1px 1px 1px 2px;
+  height: 300px;
+  width: 441px;
+}
+
+.overlay {
+  position: absolute;
+  float: left;
+  bottom: 0;
+  left: -115px;
+  right: 0;
+  background-color: #0c7055;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  height: 300px;
+  width: 445px;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.container1 {
+  position: relative;
+  width: 50%;
+}
+
+.image1 {
+  margin-left: -9px;
+  box-shadow: 1px 1px 1px 2px;
+  height: 300px;
+  width: 440px;
+}
+
+.overlay1 {
+  position: absolute;
+  float: left;
+  bottom: 0;
+  left: -12px;
+  right: 0;
+  background-color:#0c7055;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container1:hover .overlay1 {
+  height: 300px;
+  width: 448px;
+}
+
+.text1 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.container2 {
+  position: relative;
+  width: 50%;
+}
+
+.image2 {
+  margin-left: -8px;
+  box-shadow: 1px 1px 1px 2px;
+  height: 300px;
+  width: 440px;
+}
+
+.overlay2 {
+  position: absolute;
+  float: left;
+  bottom: 0;
+  left: -12px;
+  right: 0;
+  background-color: #0c7055;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container2:hover .overlay2 {
+  height: 300px;
+  width: 445px;
+}
+
+.text2 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}

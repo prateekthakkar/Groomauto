@@ -1,0 +1,105 @@
+.main
+{
+	width: 1341px;
+	height: 350px;
+	margin-left: 5px;
+	margin-top: 7px;
+  	padding: 60px;
+  	border: 0px solid gray;
+  	box-shadow:0px 1px 1px 2px gray;
+  	font-family: lato-medium;
+	font-weight: bold;
+	background: #dab411;
+}
+
+/* Box Effect*/
+.box{
+	width: 1180px;
+	height: 300px;
+	margin-left: 10px;
+	margin-top: -36px;
+  	padding: 60px;
+  	border: 0px solid gray;
+  	box-shadow:0px 1px 1px 2px gray;
+  	font-family: lato-medium;
+	font-weight: bold;
+	background: #211E1E;
+
+
+}
+.h3{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-family: 'Viga', sans-serif;
+}
+
+.p{
+	color:#6F6E6E;
+	line-height: 2em;
+	font-size: 15px;
+	margin-top:20px;
+	margin-left: -710px;
+}
+
+.h32
+{	
+	font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-family: 'Viga', sans-serif;
+	margin-left:500px;
+	margin-top: -137px;
+}
+
+.ct{
+	margin-top: -25px;
+    padding-left: 55px;
+    margin-left: 460px;
+}
+.ichome1
+{
+margin-left: 480px;
+margin-top: 10px;
+}
+
+.con
+{
+margin-left: 520px;
+margin-top: -25px;
+}
+
+.ichome2
+{
+margin-left: 477px;
+margin-top: 5px;
+}
+
+.mail
+{
+color: #6F6E6E;
+font-family: 'Viga', sans-serif;
+font-size: 15px;
+margin-left: 15px;
+margin-top: -25px;
+}
+
+.ichome3
+{
+margin-left: 480px;
+margin-top: 0px;
+}
+
+/* Icons Effects*/
+
+
+
+
+
+
+
+
+
+

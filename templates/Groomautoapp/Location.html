@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<title>Groomauto</title>
+	<!--Header Css-->
+	<link rel="stylesheet" type="text/css" href="{% static 'css/Header.css' %}">
+	<!--Body Css-->
+	<link rel="stylesheet" type="text/css" href="{% static 'css/Location.css' %}">
+
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity=			   'sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  	 <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <!--Footer Css-->
+  <link rel="stylesheet" type="text/css" href="{% static 'css/Footer.css' %}">
+  <!--Footer Css End-->
+  <style type="text/css">
+
+.form-control{
+    height: 40px;
+    box-shadow: none;
+    color: #969fa4;
+  }
+  .form-control:focus{
+    border-color: #5cb85c;
+  }
+    .form-control, .btn{        
+        border-radius: 3px;
+    }
+    .signup-form{
+    width: 800px;
+    margin: 0 auto;
+    padding: 30px 0;
+  }
+  .signup-form h2{
+    color: #636363;
+        margin: 0 0 15px;
+    position: relative;
+    text-align: center;
+    }
+  .signup-form h2:before, .signup-form h2:after{
+    content: "";
+    height: 2px;
+    width: 30%;
+    background: #d4d4d4;
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+  } 
+  .signup-form h2:before{
+    left: 0;
+  }
+  .signup-form h2:after{
+    right: 0;
+  }
+    .signup-form .hint-text{
+    color: #999;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+    .signup-form form{
+    color: #999;
+    border-radius: 3px;
+      margin-bottom: 15px;
+        background: #f2f3f7;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        padding: 30px;
+    }
+  .signup-form .form-group{
+    margin-bottom: 20px;
+  }
+  .signup-form input[type="checkbox"]{
+    margin-top: 3px;
+  }
+  .signup-form .btn{        
+        font-size: 16px;
+        font-weight: bold;    
+    min-width: 140px;
+        outline: none !important;
+    }
+  .signup-form .row div:first-child{
+    padding-right: 10px;
+  }
+  .signup-form .row div:last-child{
+    padding-left: 10px;
+  }     
+    .signup-form a{
+    color: #fff;
+    text-decoration: underline;
+  }
+    .signup-form a:hover{
+    text-decoration: none;
+  }
+  .signup-form form a{
+    color: #5cb85c;
+    text-decoration: none;
+  } 
+  .signup-form form a:hover{
+    text-decoration: underline;
+  }  
+  </style>
+</head>
+<body>
+	<div>
+	<!--Main Div -->
+	<!---Navigation Bar-1-->
+<div class="container-fluid">
+		<div class="row" id="hd1" style="box-shadow:0px 1px 3px blue; height:30px; background-color:#002080;">
+			<div class="col col-sm-10" style="margin-top:-5px;"><a href="Contact.html"class="fa fa-envelope" style="margin-left: 100px;color: #fff;">&emsp;Contact US</a></div>
+			<div class="col col-sm-2" style="margin-top: -5px;"><a href="Service.html"style="margin-left:-50px;color: #fff;">
+			Services
+			</a>
+			</div>
+		</div>
+	<!--End Navigation Bar-1-->
+	<!---Logo Bar--->
+			<div class="row" style="box-shadow:0px 1px 3px gray; height:90px; background-color:#fff;">
+				<div class="col-sm-6" id="logo"><img src="{% static 'image/LOGO.png' %}" height="80" width="120">
+				</div>
+				<div class="col col-sm-3" id="txt">
+					<p>OPENING HOURS:</br>
+					   <span style="color: gray; font-size: 12px;">MON-SAT: 9.00 AM - 8.00 PM</span></p>
+				</div>
+				<div class="col col-sm-3" id="txt1">
+					<p>CALL US NOW:</br>
+					  <span style="color: red;font-size: 25px;">+(91)123 456 789</span></p>
+				</div>
+			</div>
+ </div>
+ 	<!---End Logo Bar--->
+<div>
+ <!--- Navigation Panel Start -->
+ <div class="bg-img">
+	<nav class="nav">
+		<ul>
+			<li><a href="{% url 'Home' %}">Home</a></li>
+				<button class="btn dropdown" dropdown type="button" data-toggle="dropdown">
+				</button>
+					<li><a href="#">Services</a>
+					<ul class="dropdown-menu">
+
+        				<li class="adj"><a href="{% url 'Service' %}" class="dropdown-item" >Service</a></li>
+        				<li class="adj"><a href="{% url 'Repair' %}" class="dropdown-item">Repair</a></li>
+        				<li class="adj"><a href="{% url 'Insurance' %}" class="dropdown-item">Insurance</a></li>
+        			</ul>
+					</li>
+			<li><a href="{% url 'Contact' %}">Contact</a></li>
+			<li><a href="{% url 'Gallery' %}">Gallery</a></li>
+			<li><a href="{% url 'About' %}">About</a></li>
+			<li><a href="{% url 'Feedback' %}">FeedBack</a></li>
+			<li><a href="Login/Login_v18\index.html">Join-us</a></li>
+			<li style="height: 61px;width: 221px;"><a href="#"></a></li>
+		</ul>
+		<div class="search-box">
+		<input class="search-txt" type="text" name="" placeholder="Type to search">
+		<a class="search-btn" href=""></a>
+		<i class="fas fa-search"></i>
+	</div>
+	</nav>
+</div>
+</div>
+<!-- Navigation Panel End-->
+
+<!-- Booking for Smart Groom Section Start-->
+<h2 align="center">Booking for Smart Groom</h2>
+  <hr class="line">
+  <hr class="line" style="margin-top: -15px;">
+  <marquee class="scro">Booking Form..</marquee>
+<!-- Booking for Smart Groom Section End-->
+<div class="signup-form">
+<form class="form" action="/Location/" method="post" enctype="multipart/form-data">
+{% csrf_token %}
+<div class="form-group">
+      <div class="row">
+        <div class="col-xs-6"><input type="text" class="form-control" name="f_name" placeholder="First Name" required="required"></div>
+        <div class="col-xs-6"><input type="text" class="form-control" name="l_name" placeholder="Last Name" required="required"></div>
+      </div>          
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control" name="email" placeholder="Email" required="required">
+        </div>
+     <div class="form-group">
+            <input type="text" class="form-control" name="m_no" placeholder="Mobile Number" required="required">
+        </div>  
+       <div class="row">
+        <div class="col-xs-6"><select type="text" name="area" class="form-control" onchange="get_zip_resip(this.value)">
+          <option>--Select Area--</option>
+       <!--   <option value="1">Ambawadi</option>
+          <option value="2">Amraiwadi</option>-->
+          <option value="3">Ashram road</option>
+          <option value="4">Bodakdev</option>
+      <!--    <option value="5">Bopal</option>
+          <option value="6">Kalupur</option>
+          <option value="7">Makarba</option>-->
+          <option value="8">Memnagar</option>
+        <!--  <option value="9">Naroda</option>
+          <option value="10">Naranpura</option>-->
+          <option value="11">Sola</option>
+          <option value="12">Nehrunagar</option>
+          <option value="13">Gota</option>
+          <option value="14">Ghatlodia</option>
+          <option value="15">Gurukul</option>
+          <option value="16">Ellis Bridge</option>
+          <option value="17">Ranip</option>
+          <option value="18">Sabarmati</option>
+          <option value="19">Chandkheda</option>
+          <option value="20">Chandlodia</option>
+        </select></div>
+        <div class="col-xs-6"><input type="text" class="form-control" name="pincode" placeholder="Pincode" required="required"></div>
+      </div><br>
+      <div class="form-group">
+        <textarea type="text" class="form-control" name="address" placeholder="Address" required="required">
+        </textarea>
+      </div>
+      <div class="form-group"><select type="text" name="p_time" class="form-control" onchange="get_zip_resip(this.value)">
+          <option>Pickup Time</option>
+          <option value="1">09:00Am-10:00AM</option>
+          <option value="2">10:00Am-11:00AM</option>
+          <option value="3">11:00Am-12:00PM</option>
+          <option value="4">12:00PM-01:00PM</option>
+          <option value="5">01:00PM-02:00PM</option>
+          <option value="6">02:00PM-03:00PM</option>
+          <option value="7">03:00PM-04:00PM</option>
+          <option value="8">04:00PM-05:00PM</option>
+          <option value="9">05:00PM-06:00PM</option>
+          <option value="10">06:00PM-07:00PM</option>
+          <option value="11">07:00PM-08:00PM</option>
+          </select></div>
+           <div class="form-group">
+            <input type="text" class="form-control" name="price" placeholder="Price" required="required">
+      </div> 
+      <div class="form-group">
+      <div class="row">
+        <div class="col-xs-6"><select type="text" name="sc_name" class="form-control" onchange="get_zip_resip(this.value)">
+          <option value="1">Shiv Shakti Motors and Service Station</option>
+          <option value="2">Kumar Service Centre</option>
+          <option value="3">Punjab Honda Service Center</option>
+          <!--<option value="4">A.N.Bikes</option>
+          <option value="5">Varahi Auto Centre</option>
+          <option value="6">Kalgi Service Point</option>
+          <option value="7">Ankit Automobiles</option>
+          <option value="8">Bike Care Service Center</option>
+          <option value="9">ktm service center</option>
+          <option value="10">Honda Service Center</option>
+          <option value="11">Hero Service Center</option>-->
+          </select></div>
+        <div class="col-xs-6"><input type="text" class="form-control" name="sc_address" placeholder="Service Address" required="required"></div>
+      </div>          
+        </div>
+
+         <div class="form-group">
+      <div class="row">
+        <div class="col-xs-6"><select type="text" name="c_name" class="form-control" onchange="get_zip_resip(this.value)">
+          <option>Vehicle Company</option>
+          <option value="1">Hero</option>
+          <option value="2">Honda</option>
+          <option value="3">Suzuki</option>
+          <option value="4">Bajaj</option>
+          <option value="7">KTM</option>
+          </select></div>
+        <div class="col-xs-6"><select type="text" name="m_name" class="form-control" onchange="get_zip_resip(this.value)">
+          <option>Vehicle Model</option>
+          <option value="1">Hero Splendor Plus</option>
+          <option value="2">Hero Passion Pro</option>
+          <option value="3">Hero Glamour</option>
+          <option value="4">Hero Maestro</option>
+          <option value="5">Hero Pleasure</option>
+          <option value="6">Hero Duet</option>
+          <option value="7">Hero HF Deluxe Eco</option>
+          <option value="8">Hero Karizma ZMR</option>
+          <option value="9">Hero Splendor Pro</option>
+          <!--<option value="1">Honda Activa</option>
+          <option value="2">Honda Aviator</option>
+          <option value="3">Honda CB Shine</option>
+          <option value="4">Honda CB Unicorn</option>
+         <option value="5">Honda Activa-i</option>
+          <option value="6">Honda CBR 250R</option>
+         <option value="7">Honda CB Hornet 160R</option>
+          <option value="8">Honda CB Shine</option>
+          <option value="9">Honda Activa 5G</option>-->
+          </select></div>
+      </div>          
+      </div>
+     <div class="form-group">
+      <div class="row">
+        <div class="col-xs-6"><input type="Date" class="form-control" name="s_date" placeholder="Service Date" required="required"></div>
+        <div class="col-xs-6"><input type="text" class="form-control" name="v_number" placeholder="Vehicle Number" required="required"></div>
+      </div>          
+        </div>
+
+        <div class="form-group">
+      <label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+    </div>
+      
+    <div class="form-group">
+            <button type="submit" value="Create account" class="btn btn-success btn-lg btn-block" >Book Now</button>
+        </div>
+    </form>
+</form>
+</div>
+<!--Footer Start-->
+
+<div class="main">
+<div class="box">
+<h3 class="h3">More About Company</h3>
+<p style="color: #6F6E6E;">
+Groomauto is an online platform for bike servicing,</br>
+repair, Insurance to ease your bike problems.</br>
+Booking and order tracking system allow</br>
+you to check the status of your service.
+</p>
+
+<h3 class="h32">Contact Information</h3>
+<img  class="ichome1" src="{% static 'image/icon2.png' %}"><p class="ct" style="color:#6F6E6E">505 506 Shapath 2, OPP Rajpath Club
+Near Pakwan Cross Road,</br>
+Sarkhej-Gandhinagar Hwy, Bodakdev,
+Ahmedabad, Gujarat 380052</p></img>
+
+<img class="ichome2" src="{% static 'image/icon3.png' %}">
+  <p class="con" style="color:#6F6E6E">9876543210</p></img>
+
+<img class="ichome3" src="{% static 'image/icon1.png' %}"></img>
+  <a class="mail" href="mailto:info@example.com">GROOMAUTO@GMAIL.COM</a>
+<!--Icon-->
+<div>
+<a href="https://twitter.com/"><img src="{% static 'image/social1.png' %}"></a></img>
+<a href="https://www.facebook.com/"><img src="{% static 'image/social2.png' %}"></a></img>
+<a href="https://plus.google.com/"><img src="{% static 'image/social3.png' %}"></a></img>
+<a href="https://in.pinterest.com/"><img src="{% static 'image/social4.png' %}"></a></img>
+<!--Icon End-->
+</div>
+</div>
+</div>
+<!--Footer End-->
+
+
+
+</div>
+<!-- End Main Div-->
+</body>
+</html>

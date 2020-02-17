@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<style>
+</style>
+<body>
+<div class="container">
+          <div class="col-md-12">
+            <h3 class="text-center">Change Password</h3>
+             
+                   <form name="" class="form-horizontal cform-1" method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                                                  <div class="col-md-6" style="margin-left: 250px;">
+                         <div class="table-responsive">
+                         
+                         <table class="table table-hover table-striped">
+                         <tbody><tr>
+                          <th>Old Password:</th>
+                            <td><input type="password" class="form-control" value="" name="old_pass" required="required"></td>
+                         </tr>
+                         <tr>
+                          <th>New Password:</th>
+                            <td><input type="password" class="form-control" value="" id="new_pass" name="new_pass" required="required"></td>
+                         </tr>
+                         <tr>
+                          <th>Confirm Password:</th>
+                            <td><input type="password" class="form-control" value="" name="con_pass" onkeyup="check_password(this.value, document.getElementById('new_pass').value)"><span style="color:#f00;" id="pass_error"></span></td>
+                            
+                         </tr>
+                         
+                         <tr>
+                         <th colspan="2" class="text-center">
+            <button type="submit" value="Create account" style="width: 200px; margin-left: 150px;" class="btn btn-success btn-lg btn-block"
+            onclick="myFunction()">Change Password</button>
+        
+                            </th>
+                         </tr>
+                            
+                         </tbody></table>
+                         
+                         </div>
+                         </div></form>
+                                                    <div class="col-md-3"></div>
+          </div>
+                    </div>
+</body>
+</html>

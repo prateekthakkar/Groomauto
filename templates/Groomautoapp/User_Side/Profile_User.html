@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+ <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+font-family: "Lato", sans-serif;
+}
+.sidenav {
+height: 100%;
+width: 200px;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+background-color: #111;
+overflow-x: hidden;
+padding-top: 20px;
+}
+.sidenav a {
+padding: 6px 6px 6px 32px;
+text-decoration: none;
+font-size: 25px;
+color: #818181;
+display: block;
+}
+.sidenav a:hover {
+color: #f1f1f1;
+}
+.main {
+margin-left: 200px; /* Same as the width of the sidenav */
+}
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+<div class="sidenav">
+<a href="{% url 'Index' %}">Home</a>
+<a href="{% url 'U_Booking' %}">Booking</a>
+<a href="{% url 'U_Voucher' %}">Voucher</a>
+<a href="{% url 'U_Repair' %}">Repair</a>
+<a href="{% url 'Profile_User' %}">Profile</a>
+<a href="#">Logout</a>
+</div>
+<div class="container" style="margin-left: 250px;">
+          <div class="col-md-12">
+            <h3 class="text-center" style="margin-left: -300px;">Welcome Pratik</h3>
+             
+                   <form name="" class="form-horizontal cform-1" method="post" enctype="multipart/form-data">                          
+                    <div class="col-md-8">
+                         <div class="table-responsive">
+                         <table class="table table-hover table-striped">
+                         <tbody><tr>
+                          <th>First Name:</th>
+                            <td>Pratik</td>
+                         </tr>
+                         <tr>
+                          <th>Last Name:</th>
+                            <td>Thakkar</td>
+                         </tr>
+                         <tr>
+                          <th>Email:</th>
+                            <td>Pratikthakkar@gmail.com</td>
+                         </tr>
+                         <tr>
+                          <th>Contact No:</th>
+                            <td>9876543210</td>
+                         </tr>
+                         <tr>
+                          <th>Area</th>
+                            <td>Ghatlodiya</td>
+                         </tr>
+                          <tr>
+                          <th>Pincode</th>
+                            <td>388061</td>
+                         </tr>
+                        <tr>
+                          <th>Residence Area:</th>
+                            <td>K.K Nagar Ghatlodiya,Ahmedabad</td>
+                         </tr>
+                        <tr>
+                                                    
+                          <th id="abc" colspan="2" class="text-center"><a href="{% url 'U_Edtprofile' %}" class="btn btn-primary a-btn-slide-text">
+        <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+        <span><strong>Edit Your Profile</strong></span>
+                            <a href="{% url 'U_Chpwd' %}" class="btn btn-primary a-btn-slide-text" style="margin-left: 15px;">
+        <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+        <span><strong>Change Your Password</strong></span></th>
+                         </tr>
+                            
+                         </tbody></table>
+                         </div>
+                         </div>
+                        <div class="col-md-3"></div>
+          </form></div>
+                    </div>
+</body>
+</html>
+}
+}
+}
+}
+}
+}

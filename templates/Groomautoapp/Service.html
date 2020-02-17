@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<title>Groomauto</title>
+	<!--Header Css-->
+	<link rel="stylesheet" type="text/css" href="{% static 'css/Header.css' %}">
+	<!--Body Css-->
+	<link rel="stylesheet" type="text/css" href="{% static 'css/Service.css' %} ">
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  	 <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+	<div>
+	<!--Main Div -->
+	<!---Navigation Bar-1-->
+<div class="container-fluid">
+		<div class="row" id="hd1" style="box-shadow:0px 1px 3px blue; height:30px; background-color:#002080;">
+			<div class="col col-sm-10" style="margin-top:-5px;"><a href="Contact.html"class="fa fa-envelope" style="margin-left: 100px;color: #fff;">&emsp;Contact US</a></div>
+			<div class="col col-sm-2" style="margin-top: -5px;"><a href="Services.html"style="margin-left:-50px;color: #fff;">
+			Services
+			</a>
+			</div>
+		</div>
+	<!--End Navigation Bar-1-->
+	<!---Logo Bar--->
+			<div class="row" style="box-shadow:0px 1px 3px gray; height:90px; background-color:#fff;">
+				<div class="col-sm-6" id="logo"><img src="{% static 'image/LOGO.png' %}" height="80" width="120">
+				</div>
+				<div class="col col-sm-3" id="txt">
+					<p>OPENING HOURS:</br>
+					   <span style="color: gray; font-size: 12px;">MON-SAT: 9.00 AM - 8.00 PM</span></p>
+				</div>
+				<div class="col col-sm-3" id="txt1">
+					<p>CALL US NOW:</br>
+					  <span style="color: red;font-size: 25px;">+(91)123 456 789</span></p>
+				</div>	
+			</div>		
+ </div>
+ 	<!---End Logo Bar--->
+<div>
+  <!--- Navigation Panel Start -->
+ <div class="bg-img">
+	<nav class="nav">
+		<ul>
+			<li><a href="{% url 'Home' %}">Home</a></li>
+				<button class="btn dropdown" dropdown type="button" data-toggle="dropdown">
+				</button>
+					<li><a href="#">Services</a>
+					<ul class="dropdown-menu">
+
+        				<li class="adj"><a href="{% url 'Service' %}" class="dropdown-item" >Service</a></li>
+        				<li class="adj"><a href="{% url 'Repair' %}" class="dropdown-item">Repair</a></li>
+        				<li class="adj"><a href="{% url 'Insurance' %}" class="dropdown-item">Insurance</a></li>
+        			</ul>
+					</li>
+			<li><a href="{% url 'Contact' %}">Contact</a></li>
+			<li><a href="{% url 'Gallery' %}">Gallery</a></li>
+			<li><a href="{% url 'About' %}">About</a></li>
+			<li><a href="{% url 'Feedback' %}">FeedBack</a></li>
+			<li><a href="Login/Login_v18\index.html">Join-us</a></li>
+			<li style="height: 61px;width: 221px;"><a href="#"></a></li>
+		</ul>
+		<div class="search-box">
+		<input class="search-txt" type="text" name="" placeholder="Type to search">
+		<a class="search-btn" href=""></a>
+		<i class="fas fa-search"></i>
+	</div>
+	</nav>
+</div>
+</div>
+<!-- Navigation Panel End-->
+<div>
+<!--Price Detail Body Section Start-->
+<h3 class="p2">Packages of Service</h3>
+	<hr class="line2">
+	<hr class="line2" style="margin-top: -15px;">
+</div>
+<!--Price -->
+<div class="box">
+	<h1 class="h1" txt><sup class="sup">Rs<font  size="6">.</font></sup><font color="White">349</font></h1>
+</div>
+<!--End Price-->
+<!-- Box1-->
+<div class="box1">
+<ul class="facility-list" >
+<li id="ef">Air Filter cleaning</li>
+<li id="ef"style="margin-top: 2px;">Spark plug check & cleaning</li>
+<li id="ef" style="margin-top: 2px;">Carburetor cleaning & setting</li>
+<li id="ef" style="margin-top: 2px;">Front & Rear Brake pad setting</li>
+<li id="ef" style="margin-top: 2px;">Chain setting</li>
+<li id="ef" style="margin-top: 2px;">Clutch cable check & setting</li>
+<li id="ef" style="margin-top: 2px;">Accelerator cable check & setting</li>
+<li id="ef" style="margin-top: 2px;">Front & Rear Light check</li>
+<li id="ef" style="margin-top: 2px;">Battery check(Water Level)</li>
+<li id="ef" style="margin-top: 2px;">Greasing & oiling</li>
+<li id="ef" style="margin-top: 2px;">Speedometer & drive check</li>
+<li id="ef" style="margin-top: 2px;">Tyre pressure check</li>
+<li id="ef" style="margin-top: 2px;">Bike wash</li>
+</ul>
+<a id="buttonef" href="{% url 'Location' %}">Get Package</a>
+</div>
+
+<!--Box2-->
+<!--Price -->
+<div class="box2">
+	<h1 class="h1" txt><sup class="sup">Rs<font  size="6">.</font></sup><font color="White">649</font></h1>
+</div>
+<!--End Price-->
+<!-- Box2-->
+<div class="box3">
+<ul class="facility-list">
+<li id="ef" style="margin-top: -690px;">Air Filter cleaning</li>
+<li id="ef"style="margin-top: -633px;">Spark plug check & cleaning</li>
+<li id="ef" style="margin-top: -575px;">Carburetor cleaning & setting</li>
+<li id="ef" style="margin-top: -517px;">Front & Rear Brake pad setting</li>
+<li id="ef" style="margin-top: -459px;">Chain setting</li>
+<li id="ef" style="margin-top: -401px;">Clutch cable check & setting</li>
+<li id="ef" style="margin-top: -343px;">Accelerator cable check & setting</li>
+<li id="ef" style="margin-top: -285px;">Front & Rear Light check</li>
+<li id="ef" style="margin-top: -227px;">Battery check(Water Level)</li>
+<li id="ef" style="margin-top: -169px;">Greasing & oiling</li>
+<li id="ef" style="margin-top: -111px;">Speedometer & drive check</li>
+<li id="ef" style="margin-top: -53px;">Tyre pressure check</li>
+<li id="ef" style="margin-top: 5px;">Bike wash</li>
+<li id="ef" style="margin-top: 3px;">Engine oil Change</li>
+</ul>
+<a id="buttonef" style="margin-top:800px;" href="{% url 'Location' %}">Get Package</a>
+</div>
+
+
+<!--Box3-->
+<div class="box5" style="">
+<h1 class="h1"><sup class="sup">Rs<font  size="6">.</font></sup><font color="White">899</font></h1>
+</div>
+
+<div class="box6" style="height: 00px;">
+<ul class="facility-list">
+<li id="ef1" style="margin-top: -751px;">Smart Combo</br>3 Servicing</li>
+</ul>
+<a id="buttonef1" style="margin-top:30px;" href="{% url 'Location' %}">Get Package</a>
+</div>
+<!--End Box3-->
+
+<!--Box4-->
+<div class="box7">
+<h1 class="h1"><sup class="sup">Rs<font  size="6">.</font></sup><font color="White">1699</font></h1>
+</div>
+
+<div class="box8" style="height: 00px;">
+<ul class="facility-list">
+<li id="ef1" style="margin-top: -380px;">Prime Combo</br>3 Servicing</li>
+</ul>
+<a id="buttonef1" style="margin-top:30px;" href="{% url 'Location' %}">Get Package</a>
+</div>
+<!--End Box3-->
+<!--Price Detail Body Section Close-->
+
+</div>
+<!-- End Main Div-->
+</body>
+</html>
+

@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<title>Groomauto</title>
+	<!--Header Css-->
+	<link rel="stylesheet" type='text/css'  href="{% static 'css/Header.css' %}">
+	<link rel="stylesheet" type='text/css'  href="{% static 'css/asd.css' %}">
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  	 <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <!--Footer Css-->
+  <link rel="stylesheet" type='text/css' href="{% static 'css/Footer.css' %}">
+  <!--Footer Css End-->
+
+  <!-- Start WOWSlider.com HEAD section -->
+	<link rel="stylesheet" type="text/css" href="{% static 'engine1/style.css' %}" />
+	<script type="text/javascript" src="{% static 'engine1/jquery.js' %}"></script>
+  <!-- End WOWSlider.com HEAD section -->
+
+
+<!-- Internal Css For Gallery-->
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  font-size: 17px;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  margin-left: -130px;
+  box-shadow: 1px 1px 1px 2px;
+  height: 300px;
+  width: 441px;
+}
+
+.overlay {
+  position: absolute;
+  float: left;
+  bottom: 0;
+  left: -115px;
+  right: 0;
+  background-color: #0c7055;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  height: 300px;
+  width: 445px;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.container1 {
+  position: relative;
+  width: 50%;
+}
+
+.image1 {
+  margin-left: -9px;
+  box-shadow: 1px 1px 1px 2px;
+  height: 300px;
+  width: 440px;
+}
+
+.overlay1 {
+  position: absolute;
+  float: left;
+  bottom: 0;
+  left: -12px;
+  right: 0;
+  background-color:#0c7055;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container1:hover .overlay1 {
+  height: 300px;
+  width: 448px;
+}
+
+.text1 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.container2 {
+  position: relative;
+  width: 50%;
+}
+
+.image2 {
+  margin-left: -8px;
+  box-shadow: 1px 1px 1px 2px;
+  height: 300px;
+  width: 440px;
+}
+
+.overlay2 {
+  position: absolute;
+  float: left;
+  bottom: 0;
+  left: -12px;
+  right: 0;
+  background-color: #0c7055;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container2:hover .overlay2 {
+  height: 300px;
+  width: 445px;
+}
+
+.text2 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Body P Tag*/
+.p
+{
+  text-align: center;
+  margin-left: 10px;
+  margin-top: 50px;
+  font-family: montserrat-bold;
+  color: #232323;
+  font-size: 30px;
+  position: relative;
+}
+
+.line
+{  
+ border-top: 1px solid #3f51b5;
+ border-bottom: 1px solid #3f51b5;
+ width: 55px;
+ margin-top: -10px;
+}
+</style>
+<!--End Gallery Css-->
+
+
+
+
+
+</head>
+<body>
+	
+	<!--Main Div -->
+	<!---Navigation Bar-1-->
+<div class="container-fluid">
+		<div class="row" id="hd1" style="box-shadow:0px 1px 3px blue; height:30px; background-color:#002080;">
+			<div class="col col-sm-10" style="margin-top:-5px;"><a href="{% url 'Contact' %}"class="fa fa-envelope" style="margin-left: 100px;color: #fff;">&emsp;Contact US</a></div>
+			<div class="col col-sm-2" style="margin-top: -5px;"><a href="Service.html"style="margin-left:-50px;color: #fff;">
+			Services
+			</a>
+			</div>
+		</div>
+	<!--End Navigation Bar-1-->
+	<!---Logo Bar--->
+			<div class="row" style="box-shadow:0px 1px 3px gray; height:90px; background-color:#fff;">
+				<div class="col-sm-6" id="logo"><img src="{% static 'image/LOGO.png' %}" height="80" width="120">
+				</div>
+				<div class="col col-sm-3" id="txt">
+					<p>OPENING HOURS:</br>
+					   <span style="color: gray; font-size: 12px;">MON-SAT: 9.00 AM - 8.00 PM</span></p>
+				</div>
+				<div class="col col-sm-3" id="txt1">
+					<p>CALL US NOW:</br>
+					  <span style="color: red;font-size: 25px;">+(91)123 456 789</span></p>
+				</div>
+			</div>
+ </div>
+ 	<!---End Logo Bar--->
+<div>
+ <!--- Navigation Panel Start -->
+ <div class="bg-img">
+	<nav class="nav">
+		<ul>
+			<li><a href="{% url 'Home' %}">Home</a></li>
+        <button class="btn dropdown" dropdown type="button" data-toggle="dropdown">
+        </button>
+          <li><a href="#">Services</a>
+          <ul class="dropdown-menu" style="height: 145px;">
+
+                <li class="adj"><a href="{% url 'Service' %}" class="dropdown-item" >Service</a></li>
+                <li class="adj"><a href="{% url 'Repair' %}" class="dropdown-item">Repair</a></li>
+                
+              </ul>
+          </li>
+      <li><a href="{% url 'Contact' %}">Contact</a></li>
+      <li><a href="{% url 'Gallery' %}">Gallery</a></li>
+      <li><a href="{% url 'About' %}">About</a></li>
+      <li><a href="{% url 'Feedback' %}">FeedBack</a></li>
+			<li><a href="{% url 'Profile_User' %}">Profile</a></li>
+			<li style="height: 61px;width: 200px;"><a href="#"></a></li>
+		</ul>
+		<div class="search-box">
+		<input class="search-txt" type="text" name="" placeholder="Type to search">
+		<a class="search-btn" href=""></a>
+		<i class="fas fa-search"></i>
+	</div>
+	</nav>
+</div>
+</div>
+<!-- Navigation Panel End-->
+<div>
+ <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+
+<div class="ws_images"><ul>
+		<li><img src="{% static 'data1/images/img1.jpg' %}" alt="img1" title="img1" id="wows1_0"/></li>
+		<li><img src="{% static 'data1/images/img2.jpg' %}" alt="img2" title="img2" id="wows1_1"/></li>
+		<li><a href="http://wowslider.net"><img src="{% static 'data1/images/img5.jpg' %}" alt="bootstrap image slider" title="img5" id="wows1_2"/></a></li>
+		<li><img src="{% static 'data1/images/img6.jpg' %}" alt="img6" title="img6" id="wows1_3"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="img1"><span><img src="{% static 'data1/tooltips/img1.jpg' %}" alt="img1"/>1</span></a>
+		<a href="#" title="img2"><span><img src="{% static 'data1/tooltips/img2.jpg' %}" alt="img2"/>2</span></a>
+		<a href="#" title="img5"><span><img src="{% static 'data1/tooltips/img5.jpg' %}" alt="img5"/>3</span></a>
+		<a href="#" title="img6"><span><img src="{% static 'data1/tooltips/img6.jpg' %}" alt="img6"/>4</span></a>
+	</div></div><div class="ws_scrisspt" style="position:absolute;left:-99%"></div>
+<div class="ws_shadow"></div>
+</div>
+<script type="text/javascript" src="{% static 'engine1/wowslider.js' %}"></script>
+<script type="text/javascript" src="{% static 'engine1/script.js'%}"></script>
+<!-- End WOWSlider.com BODY section -->
+</div>
+
+<!--Body Section What WE Do-->
+<div>
+	<h2 class="p">WHAT WE DO</h2>
+	<hr class="line">
+	<hr class="line" style="margin-top: -15px;">
+<div class="row">
+            				<div class="col-md-4 col-sm-6  first">
+					<div class="service-box">
+						<div class="service-1">
+
+                            <div class="service-img" style="box-shadow: 2px 0px 2px 2px gray;">
+								<img width="430" height="293" src="{% static 'image/logo1.png' %}"sizes="(max-width: 300px) 100vw, 300px">                            </div>
+
+                            <div class="service-name">
+
+                                <div class="service-icon">
+
+								</div>
+
+
+                                <div class="service-detail">
+                                	<h5>SERVICES</h5>
+									 <p align="justify">Groomauto provides Quality and Quick service with Easy pick & Drop facility Available and Affordable with your nearby service centers. You can book most desirable service for your bike amongst our service packages.
+
+</p>
+									<a title="SERVICES" href="#">
+										Learn More<i class="fa fa-play"></i>
+                                    </a>
+                                </div>
+							</div>
+						</div>
+					</div><!-- /service-box -->
+				</div>
+                				<div class="col-md-4 col-sm-6 ">
+					<div class="service-box">
+						<div class="service-1">
+
+                            <div class="service-img" style="box-shadow: 2px 1px 2px 2px gray;">
+								<img width="430" height="293" src="{% static 'image/logo2.png' %}"sizes="(max-width: 300px) 100vw, 300px">                            </div>
+
+                            <div class="service-name">
+
+                                <div class="service-icon">
+
+								</div>
+
+
+                                <div class="service-detail">
+                                	<h5>REPAIR</h5>
+									 <p align="justify">Groomauto is the bridge between your bike and bike doctor when your bike breaks down. Typically repairs are far more complicated than doing maintenance, we provides you complete solution.</p>
+									<a title="REPAIR" href="#">
+										Learn More<i class="fa fa-play"></i>
+                                    </a>
+                                </div>
+							</div>
+						</div>
+					</div><!-- /service-box -->
+				</div>
+                				<div class="col-md-4 col-sm-6 ">
+                					<div class="service-box">
+						<div class="service-1">
+
+                            <div class="service-img" style="box-shadow: 2px 1px 2px 2px gray;">
+								<img width="430" height="293" src="{% static 'image/logo3.png' %}"sizes="(max-width: 300px) 100vw, 300px">                            </div>
+
+                            <div class="service-name">
+
+                                <div class="service-icon">
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+			</div>
+
+
+</div>
+<!--End Body Section What WE Do-->
+
+<!--Body Section WHY COOSE US?-->
+<h2 class="p">WHY COOSE US?</h2>
+	<hr class="line">
+	<hr class="line" style="margin-top: -15px;">
+<div class="container-fluid">
+	<div class="row col-md-10 col-md-offset-1">
+
+
+        <div class="col-md-4 col-sm-6">
+        <div class="item-boxes1">
+        <img src="{% static 'image/pickup_choose.png' %}" class="choseus_img"style="width: 80px; height: 75px;">
+                  <div class="why_choseus"><p style="padding: 0px;">Pick-Drop</p></div>
+                 <p class="a">We provide the doorstep pick up and drop facility to get your bike servicing done, No Negotiations, no trips to the service centers to check whether bike is serviced or not. No need to worry about who will ferry you back.</p>
+        </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+        <div class="item-boxes1">
+        <img src="{% static 'image/inspection_choose.png' %}" class="choseus_img" height="74px" width="74px">
+                <div class="why_choseus">Inspection</div>
+                <p class="a">Before your bike get picked up bike will be checked in front of you, once servicing done at the time of bike drop total work will be communicate to you.</p>
+        </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+        <div class="item-boxes1">
+        <img src="{% static 'image/fair_price_choose.png' %}" class="choseus_img" height="74px" width="74px">
+                <div class="why_choseus">Fair Price</div>
+                <p class="a">We offer you bike servicing in fair price than regular servicing charges.</p>
+        </div>
+        </div>
+
+
+        </div>
+
+	<div class="container-fluid">
+
+
+         <div class="row col-md-10 col-md-offset-1">
+
+        <div class="col-md-4 col-sm-6">
+        <div class="item-boxes1">
+        <img src="{% static 'image/payment_choose.png' %}" class="choseus_img" height="74px" width="74px">
+                  <div class="why_choseus">One click to make Payment</div>
+                 <p class="a">It is Easy to make payment through debit card, credit card, net banking &amp; wallet..</p>
+        </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+        <div class="item-boxes1">
+         <img src="{% static 'image/service_choose.png' %}" class="choseus_img" height="74px" width="74px">
+               <div class="why_choseus">Transparent Servicing</div>
+               <p class="a">We offer you transparent servicing, you can check what servicing to be done for you bike through App/website; no extra work will be done without prior permission.</p>
+        </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+        <div class="item-boxes1">
+        <img src="{% static 'image/reminder_choose.png' %}" class="choseus_img" height="74px" width="74px">
+                <div class="why_choseus">Reminder</div>
+                <p class="a">We are providing you reminder facility that when would be next service for your bike, to make sure that the vehicle is in excellent condition.</p>
+        </div>
+        </div>
+
+
+          </div>
+
+
+        </div>
+</div>
+<h2 class="p">Gallary</h2>
+	<hr class="line">
+	<hr class="line" style="margin-top: -15px;">
+
+<div class="container-fluid">
+
+  <div class="row">
+    <div class="col-sm-4">
+    	<div class="container">
+  <img src="{% static 'image/1.jpg' %}" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Tyer pressure check</div>
+  </div>
+</div>
+    </div>
+    <div class="col-sm-4">
+    	<div class="container1">
+  <img src="{% static 'image/2.jpg' %}" alt="Avatar" class="image1">
+  <div class="overlay1">
+    <div class="text1">Bike Washing</div>
+  </div>
+</div>
+    </div>
+    <div class="col-sm-4"><div class="container2">
+  <img src="{% static 'image/3.jpg' %}" alt="Avatar" class="image2">
+  <div class="overlay2">
+    <div class="text2">Wire Checking</div>
+  </div>
+</div></div>
+  </div>
+</div>
+
+<!--Footer Start-->
+
+<div class="main">
+<div class="box">
+<h3 class="h3">More About Company</h3>
+<p style="color: #6F6E6E;">
+Groomauto is an online platform for bike servicing,</br>
+repair, Insurance to ease your bike problems.</br>
+Booking and order tracking system allow</br>
+you to check the status of your service.
+</p>
+
+<h3 class="h32">Contact Information</h3>
+<img  class="ichome1" src="{% static 'image/icon2.png' %}"><p class="ct" style="color:#6F6E6E">505 506 Shapath 2, OPP Rajpath Club
+Near Pakwan Cross Road,</br>
+Sarkhej-Gandhinagar Hwy, Bodakdev,
+Ahmedabad, Gujarat 380052</p></img>
+
+<img class="ichome2" src="{% static 'images/icon3.png' %}">
+  <p class="con" style="color:#6F6E6E">9876543210</p></img>
+
+<img class="ichome3" src="{% static 'image/icon1.png' %}"></img>
+  <a class="mail" href="mailto:info@example.com">GROOMAUTO@GMAIL.COM</a>
+<!--Icon-->
+<div>
+<a href="https://twitter.com/"><img src="{% static 'image/social1.png' %}"></a></img>
+<a href="https://www.facebook.com/"><img src="{% static 'image/social2.png' %}"></a></img>
+<a href="https://plus.google.com/"><img src="{% static 'image/social3.png' %}"></a></img>
+<a href="https://in.pinterest.com/"><img src="{% static 'image/social4.png' %}"></a></img>
+<!--Icon End-->
+</div>
+</div>
+</div>
+<!--Footer End-->
+</div>
+</div>
+<!-- End Main Div-->
+</body>
+</html>

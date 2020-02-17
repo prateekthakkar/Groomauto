@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<title>Groomauto</title>
+	<!--Header Css-->
+	<link rel="stylesheet" type="text/css" href="{% static 'css/Header.css' %}">
+	<!--Body Css-->
+	<link rel="stylesheet" type="text/css" href="{% static 'css/Repair.css' %}">
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity=			   'sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src=1"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  	 <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://www.google.com/reCAPTCHA/api.js" async defer></script>
+  
+</head>
+<body>
+	<div>
+	<!--Main Div -->
+	<!---Navigation Bar-1-->
+<div class="container-fluid">
+		<div class="row" id="hd1" style="box-shadow:0px 1px 3px blue; height:30px; background-color:#002080;">
+			<div class="col col-sm-10" style="margin-top:-5px;"><a href="Contact.html"class="fa fa-envelope" style="margin-left: 100px;color: #fff;">&emsp;Contact US</a></div>
+			<div class="col col-sm-2" style="margin-top: -5px;"><a href="Service.html"style="margin-left:-50px;color: #fff;">
+			Services
+			</a>
+			</div>
+		</div>
+	<!--End Navigation Bar-1-->
+	<!---Logo Bar--->
+			<div class="row" style="box-shadow:0px 1px 3px gray; height:90px; background-color:#fff;">
+				<div class="col-sm-6" id="logo"><img src="{% static 'image/LOGO.png' %}" height="80" width="120">
+				</div>
+				<div class="col col-sm-3" id="txt">
+					<p>OPENING HOURS:</br>
+					   <span style="color: gray; font-size: 12px;">MON-SAT: 9.00 AM - 8.00 PM</span></p>
+				</div>
+				<div class="col col-sm-3" id="txt1">
+					<p>CALL US NOW:</br>
+					  <span style="color: red;font-size: 25px;">+(91)123 456 789</span></p>
+				</div>	
+			</div>		
+ </div>
+ 	<!---End Logo Bar--->
+<div>
+  <!--- Navigation Panel Start -->
+ <div class="bg-img">
+	<nav class="nav">
+		<ul>
+			<li><a href="{% url 'Home' %}">Home</a></li>
+				<button class="btn dropdown" dropdown type="button" data-toggle="dropdown">
+				</button>
+					<li><a href="#">Services</a>
+					<ul class="dropdown-menu">
+
+        				<li class="adj"><a href="{% url 'Service' %}" class="dropdown-item" >Service</a></li>
+        				<li class="adj"><a href="{% url 'Repair' %}" class="dropdown-item">Repair</a></li>
+        				<li class="adj"><a href="{% url 'Insurance' %}" class="dropdown-item">Insurance</a></li>
+        			</ul>
+					</li>
+			<li><a href="{% url 'Contact' %}">Contact</a></li>
+			<li><a href="{% url 'Gallery' %}">Gallery</a></li>
+			<li><a href="{% url 'About' %}">About</a></li>
+			<li><a href="{% url 'Feedback' %}">FeedBack</a></li>
+			<li><a href="Login/Login_v18\index.html">Join-us</a></li>
+			<li style="height: 61px;width: 221px;"><a href="#"></a></li>
+		</ul>
+		<div class="search-box">
+		<input class="search-txt" type="text" name="" placeholder="Type to search">
+		<a class="search-btn" href=""></a>
+		<i class="fas fa-search"></i>
+	</div>
+	</nav>
+</div>
+</div>
+<!-- Navigation Panel End-->
+<div>
+<!-- Repair Section Start -->
+<h3 class="p">Repair</h3>
+	<hr class="line">
+	<hr class="line" style="margin-top: -15px;">
+<marquee class="scro">Everything We Do is Driven By You.</marquee>
+<!--Repair Section End-->
+
+<!--Form Section Start-->
+ 
+ <!--Box Div Section-->
+<div class="box">	
+<!--Form Section--><form class="form" action="{% url 'Repair' %}" method="post" autocomplete="on" enctype="multipart/form-data">
+	{% csrf_token %}
+  	<tr>
+  		<td>Name<td>
+  			<input class="block block1" type="text" name="name" placeholder="Name:">
+  		</td></td>
+  	</tr></br>
+  	<tr>
+  		<td>Email-Id<td>
+  	  		<input  class="block block2" type="text" name="email" placeholder="Email-Id:">
+  	  	</td></td>
+  	  </tr></br>
+  	<tr>
+  		<td>Phone<td>
+  	  		<input  class="block block3" type="number" name="phone" placeholder="Phone:">
+  	  </td></td></br>
+  	</tr>
+
+  	 <tr>
+  		<td>Vehicle-Company<td>
+  	  		<select class="block" name="vehicle_company">
+				<option value="Hero">Hero</option>
+				<option value="Honda">Honda</option>
+				<option value="Baja">Bajaj</option>
+				<option value="Tvs">Tvs</option>
+				<option value="Yamaha">Yamaha</option>
+				<option value="Suzuki">Suzuki</option>
+				<option value="Vespa">Vespa</option>
+				<option value="Mahindra">Mahindra</option>
+				<option value="Ktm">Ktm</option>
+			</select>
+  	  	</td></td></br>
+  	</tr>
+  	<tr>
+  		<td>Vehicle-Model<td>
+  	  		<input  class="block block5" type="text" name="vehicle-model" placeholder="Vehicle-Model:">
+  	  	</td></td></br>
+  	</tr>
+  	<tr>
+  		<td>Repair-Date<td> 
+  	  	<input  class="block block6" type="date" name="repair_date" placeholder="DD-MM-YYYY">
+  	  	</td></td></br>
+  	</tr>
+  	<tr>
+  		<td>Vehicle-Number<td>
+  			<input  class="block block7" type="text" name="vehicle_number" placeholder="GJ 01 CC 6645">
+  		</td></td></br>
+  	</tr>
+  	</br></br>
+  	<tr>
+  		<div class="block8" ><td>Message:</td></div>
+  		<div class="area">
+  			<textarea class="area" type="text" name="add_message" placeholder="Message:">
+  	  		</textarea><div>
+  	</tr>
+  	 
+  	<tr>
+		<td><input class="button" type="submit" value="Submit" name="submit">
+		</td>
+	</tr> 
+</form>
+<!--Form Section End-->
+</div>
+<!--Box Div Section-->
+</div>
+</div>
+<!--From Section End-->
+</div>
+<!-- End Main Div-->
+</body>
+</html>
